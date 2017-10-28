@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="wrapper-form">
+    <h1>Band Profile</h1>
+
+    <p><%= @band.name %></p>
+
+    <p><%= link_to 'Album List', album_url %></p>
+    <p><%= button_to 'Band List', bands_url, method: :get %></p>
+    <p><%= button_to 'Logout', session_url, method: :delete %></p>
+  </div>
+</div>

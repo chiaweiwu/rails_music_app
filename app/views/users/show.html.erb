@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="wrapper-form">
+    <h1>User</h1>
+
+    <p>Email: <%= current_user.email %></p>
+
+
+    <p><%= button_to 'Create Band', new_band_url, method: :get %></p>
+    <p><%= button_to 'Band List', bands_url, method: :get %></p>
+    <p><%= button_to 'Logout', session_url, method: :delete %></p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+// Place all the styles related to the Bands controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.band-styling {
+  padding: 0;
+  margin: 0;
+}
+
+ul.band-styling li {
+  list-style: none;
+}
+
+ul.band-styling li a:hover{
+  text-decoration: line-through;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="wrapper-form">
+    <h1>Album Profile</h1>
+
+    <p>Album Name: <%= @album.title %></p>
+    <p>Album Year: <%= @album.year %></p>
+    <p>Album Band: <%= @album.band_id %></p>
+    <p>Album Genre: <%= @album.genre %></p>
+
+    <p><%= button_to 'Band List', bands_url, method: :get %></p>
+    <p><%= button_to 'Logout', session_url, method: :delete %></p>
+  </div>
+</div>

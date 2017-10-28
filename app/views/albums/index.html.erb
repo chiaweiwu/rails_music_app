@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="wrapper-form">
+    <ul class="band-styling">
+      <h1>Album</h1>
+
+      <% @albums.each do |album| %>
+        <li><a href="<%= album_url(album) %>"><p><%= album.title %></p></a></li>
+      <% end %>
+
+
+      <p><%= button_to 'Album List', album_url, method: :post %></p>
+    </ul>
+  </div>
+</div>

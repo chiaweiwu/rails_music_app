@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="wrapper-form">
+    <h1>New Band</h1>
+
+    <form action="<%= bands_url %>" method="post">
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+      <p>
+        <input type="text" name="band[name]" placeholder="Title">
+      </p>
+
+
+      <input type="submit" value="Submit">
+      <br>
+    </form>
+  </div>
+</div>

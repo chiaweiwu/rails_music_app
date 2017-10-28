@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="wrapper-form">
+    <ul class="band-styling">
+      <h1>Bands</h1>
+
+      <% @bands.each do |band| %>
+        <li><a href="<%= band_url(band) %>"><p><%= band.name %></p></a></li>
+      <% end %>
+    </ul>
+
+    <p><%= button_to 'Logout', session_url, method: :delete %></p>
+    
+  </div>
+</div>

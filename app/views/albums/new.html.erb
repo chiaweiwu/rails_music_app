@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="wrapper-form">
+    <h1>New Album</h1>
+
+    <form action="<%= albums_url %>" method="post">
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+      <p>
+        <input type="text" name="album[title]" placeholder="Title">
+      </p>
+      <p>
+        <input type="text" name="album[year]" placeholder="Year">
+      </p>
+      <p>
+        <input type="text" name="album[band_id]" placeholder="Band ID">
+      </p>
+
+      <p>
+        <input type="text" name="album[genre]" placeholder="Title">
+      </p>
+
+
+      <input type="submit" value="Submit">
+      <br>
+    </form>
+  </div>
+</div>
